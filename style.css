@@ -39,7 +39,7 @@ main {
     /* Colocar centralizado o conteúdo do span vertical e horizontalmente,
     necessário display: grid para funcionar */
     font-size: 5rem;
-    color: var(--font-color);
+    color: var(--bg-color);
 }
 
 #gameBoard span.win {
