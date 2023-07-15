@@ -1,0 +1,87 @@
+:root {
+    --bg-color: #232323;
+    --border-color: #DDD;
+    --font-color: #f1f5f9;
+    --primary-color: #2bf195;
+    --error-color: #ff0043;
+}
+
+body {
+    font-family: sans-serif;
+    
+
+}
+
+main {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#gameBoard {
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    max-width: 19rem;
+    margin-top: 1.5rem;
+}
+
+#gameBoard span {
+    background-color: var(--border-color);
+    display: grid;
+    place-content: center; 
+    /* Colocar centralizado o conteúdo do span vertical e horizontalmente,
+    necessário display: grid para funcionar */
+    font-size: 5rem;
+    color: var(--font-color);
+}
+
+#gameBoard span.win {
+    background-color: var(--primary-color);
+}
+
+input.form-control {
+    width: 40%;
+}
+
+label {
+    margin-top: 24px;
+    color: var(--border-color);
+}
+
+.cursor-pointer {
+    cursor:pointer;
+}
+
+.game-title {
+    text-align: center;
+    margin-top: 24px;
+    font-weight: bold;
+    color: var(--border-color);
+}
+
+#start {
+    margin: 24px 0;
+    width: 40%;
+}
+
+.gameSituation {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--border-color);
+
+}
+
+#themeSwitcher {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: var(--border-color);
+    color: var(--bg-color);
+}
